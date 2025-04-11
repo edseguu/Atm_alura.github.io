@@ -1,0 +1,179 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("b1.jpg");
+}
+
+#dialog1{
+    position: absolute;
+    width: 82%;
+    height: 92%;
+    border: 4px solid #06568b;
+    background-color: #91c0e771;
+    backdrop-filter: blur(35px);
+    border-radius: 40px;
+    z-index: 90;
+}
+#pInput{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.86);
+    font-size: .8em;
+    font-family: Consolas, monospace;
+}
+
+
+input{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 11%;
+    border-radius: 20px;
+    border: 3px solid #000;
+    background-color: #1f60ac;
+    font-size: clamp(.1em, 1vw + 1em, 3em);
+    color: #ffffff;
+    text-align: center;
+
+}
+input::placeholder{
+    color: rgba(186, 228, 255, 0.93);
+    text-align: center;
+    font-weight: 500;
+    font-size: clamp(.1em, 1vw + 1em, 3em);
+}
+input:focus{
+    outline: none;
+    border: 4px solid #00daff;
+    background-color: #1f3f63;
+}
+
+
+
+
+.atmCuerpo{
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    border: 3px solid #000;
+    backdrop-filter: blur(3px);
+    background-color: rgba(24, 83, 161, 0.68);
+    border-radius: 20px;
+    padding: 12px;
+    overflow: hidden;
+
+}
+
+#nombreUsuario{
+    position: relative;
+    color: #ffcba6;
+    font-size: 2em;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#b1{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    cursor: pointer;
+
+    border: 3px solid #000;
+    border-radius: 232px;
+    backdrop-filter: blur(1px);
+    background-color: rgba(106, 176, 255, 0);
+    color: antiquewhite;
+
+    width: 70%;
+    height: 70px;
+    text-align: center;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+#b1:hover{
+    background-color: rgba(3, 63, 129, 0.62);
+    color: rgba(255, 255, 255, 0.56);
+    border: 3px solid #00daff;
+    transition: 0.3s;
+}
+
+#divtxt{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 12%;
+    background-color: #152944;
+    color: white;
+    text-align: center;
+
+}
+#saldoUsuario{
+    position: absolute;
+    left: 50%;
+    top: 34%;
+
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 13%;
+    background-color: #0b1f32;
+    color: white;
+
+    display: none;
+
+}
+
+#inputIngreso{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 7%;
+    background-color: #0b1f32;
+    overflow: hidden;
+    display: none;
+}
+
+#containerBotones{
+    position: absolute;
+    display: grid;
+    grid-gap: 50px;
+    top: 65%;
+    visibility: hidden;
+
+}
+
+#btnI, #btnR {
+
+    cursor: pointer;
+    font-size: 1.6em;
+    width: 200px;
+    height: 60px;
+
+    border: 2px solid #000;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background-color: rgba(106, 176, 255, 0.51);
+    transition: 0.5s;
+
+}
+#btnI:hover, #btnR:hover{
+    background-color: rgba(3, 63, 129, 0.82);
+    color: antiquewhite;
+    border: 2px solid #55defa;
+    transition: 0.5s;
+}

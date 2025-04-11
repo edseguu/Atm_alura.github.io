@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<dialog open id="dialog1">
+    <div></div>
+    <input type="text" id="inputNombre" placeholder="Escribe tu nombre" maxlength="15">
+    <p id="pInput">(i) máximo 15 caracteres</p>
+
+</dialog>
+
+
+<div class="atmCuerpo">
+    <div id="nombreUsuario"></div>
+    <button id="b1" onclick="cerrarBtn()">Iniciar Sesion</button>
+    <div id="divtxt">
+    </div>
+    <div id="saldoUsuario"><a class="txtSaldo">Tu saldo es de:</a> <b id="saldo"></b></div>
+
+</div>
+
+<div id="containerIngreso">
+    <input type="number" id="inputIngreso" placeholder="Ingresa el monto" max="99999" min="0"  oninput="limitarLongitud(this, 5)">
+</div>
+
+<div id="containerBotones">
+    <button id="btnI" onclick="ingresarDinero()">Ingresar Dinero</button>
+    <button id="btnR" onclick="quitarSaldo()">Retirar Dinero</button>
+</div>
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
